@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header-section */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: right;
+}
+.header-left img{
+    width: 170px;
+    height: auto;
+}
+.fa-phone{
+    font-size: 12.3px;
+}
+
+/* Online Sell Section */
+.online-sell{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+.foodpanda-logo img{
+    width: 350px;
+    height: auto;
+}
+.hungrynaki-logo img{
+    width: 350px;
+    height: auto;
+}
+.online-sell button{
+    background: linear-gradient(#000000, #4e2b2b);
+    padding: 7px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.online-sell button:hover{
+    background: linear-gradient(rgb(141, 75, 75), rgb(61, 7, 7));
+}
+.online-sell a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Social Link Section */
+.social-link{
+    display: flex;
+    margin-top: 60px;
+    justify-content: end;
+    margin-right: 20px;
+}
+.social-link .facebook img{
+    width: 70px;
+    height: auto;
+    margin-right: -2px;
+}
+.social-link .instagram img{
+    width: 38.5px;
+    height: auto;
+    margin-top: 2px;
+}
+.social-link .whatsapp img{
+    width: 48px;
+    height: auto;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+/* Footer Section */
+.address{
+    display: none;
+}
+
+
+
+
+@media(max-width: 720px){
+    header{
+        flex-flow: column;
+        text-align: center;
+    }
+    .header-right{
+        display: none;
+    }
+    .fa-phone{
+        font-size: 10px;
+    }
+    .online-sell{
+        flex-flow: column;
+    }
+    .foodpanda-logo img{
+        width: 150px;
+    }
+    .hungrynaki-logo img{
+        width: 150px;
+    }
+    .online-sell button{
+        padding: 7px 12px;
+        border-radius: 10px;
+    }
+    .online-sell a{
+        font-size: 12px;
+    }
+    .hungrynaki{
+        margin-top: 50px;
+    }
+    .social-link{
+        justify-content: center;
+    }
+    .address{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .online-sell button{
+        margin-top: -3px;
+        background: linear-gradient(#000000, #4e2b2b);
+    }
+}
